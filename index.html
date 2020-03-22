@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <title>Mam Prawo!</title>
+	</head>
+	<body>
+
+
+		<div id="Assistant">
+		</div>
+	<script type="text/javascript">
+		jQuery.ajax({ url: 'https://assistant.api.seraphin.legal//api/v2/Assistant/c87cbb4b-ac56-4d55-9aa7-eb8038b561fd/6ee3885b-3798-4f69-9f97-45024474203d/Viewer', method: 'POST' }).done(function (data) {
+			jQuery("#Assistant").html(data); run(); });
+	</script>
+
+
+
+	</body>
+</html>
